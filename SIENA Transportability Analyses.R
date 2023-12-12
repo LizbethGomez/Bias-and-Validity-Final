@@ -5,7 +5,8 @@
 #Create a simple function that mimics the numerical example in [[Westreich et al., 2017]]
 
 calculate_odds_and_weighted_risk_difference <- function(trial_population, target_population, 
-                                                        trial_Z1_percent, target_Z1_percent, effect_Z1, effect_Z0) {
+                                                        trial_Z1_percent, target_Z1_percent, 
+                                                        effect_Z1, effect_Z0) {
   # Calculate the number of individuals with Z = 1 and Z = 0 in each population
   trial_Z1 <- trial_population * trial_Z1_percent / 100
   trial_Z0 <- trial_population - trial_Z1
@@ -35,5 +36,5 @@ calculate_odds_and_weighted_risk_difference <- function(trial_population, target
 }
 
 # Example usage
-result <- calculate_odds_and_weighted_risk_difference(295, 109, 68.6, 32.4, 14, 48)
+result <- calculate_odds_and_weighted_risk_difference(295, 109, 74.9, 51.3, 14, 48)
 print(result)

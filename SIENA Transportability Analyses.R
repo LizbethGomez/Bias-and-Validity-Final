@@ -35,6 +35,7 @@ calculate_odds_and_weighted_risk_difference <- function(trial_population, target
               "Weighted Risk Difference" = weighted_risk_difference))
 }
 
-# Example usage
-result <- calculate_odds_and_weighted_risk_difference(295, 109, 74.9, 51.3, 14, 48)
+# SIENA QBA example
+result <- calculate_odds_and_weighted_risk_difference(295, 109, 74.9, 51.4, 14, 48)
 print(result)
+
